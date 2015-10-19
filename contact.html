@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!-- William Sprout - Project 1 - CST150 - Sandra Rimetz -->
+<html lang="en">
+
+<head>
+	<!-- META TAGS -->
+	<meta charset="utf-8">
+	<title>The Arena</title>
+<!-- FAVICON applied -->
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="arena.css">
+</head>
+
+<body>
+<!-- Wrapper body -->
+	<div id="wrapper">
+			<div id="logo">
+				<a href="index.html"><span class="light">the</span><span class="heavy">Arena</span></a>
+			</div>
+			<div id="accent">
+				epic strategy. immersive gameplay. endless fun.
+			</div>
+<!-- Navigation Area -->
+		<nav>
+<!-- Navigation Menu links (no underline, all assigned a class name-->
+			<a href="classes.html" class="btn-green">CLASSES<p>20 and counting!</p></a>
+			<!-- Use of inline style to override a font color-->
+			<!-- external hyperlink -->
+			<a href="https://www.kickstarter.com/projects/billysprout/862039365?token=c3709bf1" class="btn-orange">KICKSTARTER<p style="color: #333;">help us <b>soar!</b></p></a>
+			<a href="learn.html" class="btn-blue">Learn More<p>about us!</p></a>
+		</nav>
+		<main>
+			<h1>Contact Us</h1>
+			<p>
+				<!-- Email Hyperlink -->
+				Please send any immediate concerns to <a href="mailto:sprout.billy@gmail.com">sprout.billy@gmail.com</a>, or fill out the form below:
+			</p>
+
+			<!-- CONTACT FORM -->
+			<form method = "post" action="empty_script.php">
+				<!-- basic input -->
+				<p>
+					<label for="myName">Your Name: <input id="myName"></label>
+				</p>
+				<!-- datalist input -->
+				<p>
+					<label for="myConcern">Your Concern: 
+						<input list="concerns" id="myConcern">
+							<datalist id="concerns">
+								<option value="Media Inquiry">Media Inquiry</option>
+								<option value="Site Feedback">Site Feedback</option>
+								<option value="Game Feedback">Game Feedback</option>
+								<option value="Kickstarter Concern">Kickstarter Concern</option>
+								<option value="Other">Other</option>
+								<option value="Final Project Extra Credit? :-)">Easter Egg!</option>
+							</datalist>
+					</label>
+				</p>
+				<!-- multi-line input -->
+				<p>
+					<label for="myComments">Your Feedback:
+						<textarea id="myComments" rows="5" cols="50"></textarea>
+					</label>
+				</p>
+					Can we contact you about your concern?
+						<br/>
+						<input type="radio" id="contactBack" value="no"> No thanks.
+						<br/><br/>
+						<input type="radio" value="yes"> 
+							<label for="contactEmail"> Yes, my email is: 
+								<input id="contactEmail">
+							</label>
+				<!-- SUBMIT -->
+				<p><input type="submit"></p>
+			</form>
+
+		</main>
+<!-- Footer -->
+		<footer>
+			<a href="contact.html"><b>contact us</b></a> &bull; <a href="index.html">home</a> &bull; <a href="classes.html">units</a> &bull; <a href="learn.html">learn more</a>
+			<p><!-- Proof of Validation -->
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    				<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+    			</a>
+    			<a href="https://validator.w3.org/">
+    				<img alt="Valid HTML!" style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-html401.png">
+    			</a>
+			</p>
+		</footer>
+	</div>
+</body>

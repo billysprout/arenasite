@@ -1,0 +1,430 @@
+/*
+	FONTS AND HOUSEKEEPING
+*/
+@font-face {
+  font-family: "nexa";
+  src: url("fonts/NexaLight.otf") format("opentype");
+  font-style: italic;
+}
+@font-face {
+  font-family: "nexa";
+  src: url("fonts/NexaBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "exo";
+  src: url("fonts/exo_el.otf") format("opentype");
+}
+
+/*
+	MAIN BODY
+*/
+
+/* Wrapper body control via external stylesheet */
+#wrapper {
+	/* Background */
+	background-image: url('img/logo.png');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #fff;	
+	
+	/* Layout */
+	position:absolute;
+	margin-left:15%;
+	margin-top: -12%;
+	padding-top: 300px;
+	width: 70%;
+	min-width: 750px;
+
+/* Font attributes */
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/*
+	LOGO
+*/
+#logo {
+  	/* Dimensions */
+  	width: 100%;
+  	display: block;
+  	text-align: center;
+
+  	/* font */
+  	font-family: nexa;
+  	font-size: 10em;
+  	-webkit-text-stroke: 2px black;
+
+  	/* zero out weird chrome spacing */
+  	padding: 0px 0px;
+  	margin: 0px 0px -40px 0px;
+}
+/* logo text styles */
+.light {
+  	font-style: italic;
+  	font-size:.85em;
+  	letter-spacing: -4px;
+  	-webkit-text-stroke: 1px black;
+}
+.heavy {
+	display: inline;
+	font-weight: bold;
+	letter-spacing: -2px;
+}
+#accent {
+	/* text-align isn't working when this is just a tag. */
+	text-align: center;
+	font-family: exo;
+	font-size: 1.1em;
+	letter-spacing: 4px;
+	text-shadow: 0 0 3px #fff;
+	margin: auto;
+}
+
+/*
+	NAV BUTTONS
+*/
+.btn-green:active {
+	/* move to obscure the shadow when clicked */
+	transform: translate(0px, 5px);
+	-webkit-transform: translate(0px, 5px);
+	box-shadow: 0px 1px 0px 0px;
+}
+/* Class 2/2 */
+.btn-green {
+	border-radius: 5px;
+ 	padding: 15px 15px 15px 15px;
+ 	font-size: 1.3em;
+ 	text-decoration: none;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	color: #fff;
+ 	display: inline-block;
+ 	z-index: 2;
+ 	height: 45px;
+ 	min-width: 110px;
+ 	overflow: hidden;
+	margin-left: 17.08%;
+	width: 11.92%;
+	background-color: #2ecc71;
+	box-shadow: 0px 5px 0px 0px #15B358;
+}
+.btn-green:active {
+	/* move to obscure the shadow when clicked */
+	transform: translate(0px, 5px);
+	-webkit-transform: translate(0px, 5px);
+	box-shadow: 0px 1px 0px 0px;
+}
+.btn-green:hover {
+	background-color: #48E68B;
+}
+.btn-orange {
+	border-radius: 5px;
+ 	font-size: 1.3em;
+ 	text-decoration: none;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	color: #fff;
+ 	display: inline-block;
+ 	z-index: 2;
+ 	overflow: hidden;
+	background-color: #e67e22;
+	box-shadow: 0px 5px 0px 0px #CD6509;
+	/* larger button */
+	margin-left: 4%;
+	width: 21.35%;
+	min-width: 190px;
+	height: 50px;
+	padding: 25px 25px 25px 25px;
+	font-size: 1.7em;
+}
+/* CSS TRANSITION: Important! */
+.btn-orange:hover {
+	/* scale to 120% size over 2 seconds when hovered. */
+	background-color: #FF983C;
+	transform: scale(1.2);
+	transition: all 2s;
+}
+.btn-orange:active {
+	/* move to obscure the shadow when clicked */
+	transform: translate(0px, 5px);
+	-webkit-transform: translate(0px, 5px);
+	box-shadow: 0px 1px 0px 0px;
+}
+.btn-blue {	
+	border-radius: 5px;
+ 	padding: 15px 15px 15px 15px;
+ 	font-size: 1.3em;
+ 	text-decoration: none;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	color: #fff;
+ 	display: inline-block;
+ 	z-index: 2;
+ 	height: 45px;
+ 	min-width: 110px;
+ 	overflow: hidden;
+	background-color: #66aaff;
+	box-shadow: 0px 5px 0px 0px #3C93D5;
+	margin-left: 4%;
+	width: 11.92%;
+
+}
+.btn-blue:active {
+	/* move to obscure the shadow when clicked */
+	transform: translate(0px, 5px);
+	-webkit-transform: translate(0px, 5px);
+	box-shadow: 0px 1px 0px 0px;
+}
+.btn-blue:hover {
+	background-color: #6FC6FF;
+}
+
+/* 
+	FORM
+*/
+label, input {
+	display: inline-block;
+}
+label {
+	width: 30%;
+	text-align: left;
+}
+input {
+		font-size: 1.4em;
+}
+label + input {
+	width: 30%;
+	margin: 0 30% 0 4%;
+}
+form p {
+	font-size: .6em;
+}
+
+/*
+	TABLE
+*/
+table {
+	width: 100%;
+	border-bottom: 2px solid black;
+}
+tr .left {
+	text-align: left;
+	display: block;
+}
+.rightalign {
+	text-align: right;
+	border-left: none;
+	border-right: 2px solid grey;
+}
+td {
+	border-left: 2px solid black;
+	border-radius: 4;
+	padding-left: 10px;
+}
+td p {
+	padding: 0px;
+	margin: 0px;
+}
+.tableimage {
+	width: 30%;
+}
+.tabledata {
+	width: 70%;
+	text-align: left;
+}
+.dragon {
+	/* IMAGE BOX MODEL USE 1/2 */
+	margin-left: -75px;
+	margin-right: -100px;
+}
+.pyro {
+	/* IMAGE BOX MODEL USE 2/2 */
+	margin: -50px -50px -70px -50px;
+
+}
+td img {
+	transform: scale(.9);
+	transition: all .5s;
+}
+td img:hover {
+	/* more CSS3 animation */
+	transform: scale(1.2);
+	transition: all 2s;
+}
+td p {
+	margin-bottom: 0px;
+}
+td span {
+	font-style: italic;
+	font-size: .7em;
+	padding-left: 20px;
+	margin-top: -50px;
+}
+/* 
+	OTHER ELEMENTS
+*/
+main {
+	/* The main body of text on each page */
+	background-color: #ecf0f1;
+	border: 2px solid #aaa;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 10px;
+	display: block;
+	float: left;
+	width: 90%;
+	font-size: 1em;
+}
+main ul {
+/* Unordered list using circle type attribute */
+	list-style-type: circle;
+	font-size: 1em;
+	width: 60%;
+}
+.right {
+	opacity: 1;
+	margin: 10px 10px;
+}
+.left {
+	display: block;
+	float: right;
+	width: 20%;
+	height: 100px;
+	padding: 10px;
+}
+
+main p {
+	font-size: 1em;
+	margin: 0px;
+	padding: 10px 0px;
+	clear: right;
+}
+main a {
+	text-decoration: underline;
+	color: #2980b9;
+}
+main a:visited {
+	color: #2980b9;
+}
+
+/* Title elements */
+h1 {
+	text-shadow: 0 0 3px #333;
+	font-size: 2.5em;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0px;
+}
+h2 {
+	font-size: 1.7em;
+	padding: 0px;
+	padding-left: 10px;
+	margin: 0px;
+}
+h3 {
+	/* only used in tables */
+	padding: 0px 0px 0px 15px;
+	margin: none;
+}
+footer {
+/* FOOTER SELECTOR CONFIGURATION */
+	background-color: #2980b9;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 40%;
+	margin: auto;
+	text-align: center;
+	clear: left;
+
+	color: rgb(52, 73, 94);
+	font-family: Arial, sans-serif;
+	border: 2px dashed rgb(52, 73, 200);
+}
+
+/* 
+	NESTED ELEMENTS
+*/
+footer a {
+	color: rgb(52, 73, 150)
+}
+footer a:visited {
+	color: #aaa;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a p { 
+	/*button subtitles */
+	font-size: .6em;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	
+	font-style: italic;
+	color: #333;
+	text-align: center;
+}
+p img {
+	/* thumbnails */
+}
+
+/*
+	MOBILE STYLESHEET
+*/
+@media only screen and (max-width: 1080px) {
+	#wrapper {
+		/* expand to fill screen & remove extraneous padding */
+		width: 100%;
+		
+		margin: auto;
+		background-image: none;
+		padding: 0px;
+	}
+	/* adjust fonts */
+	#logo {
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	.light {
+		font-size: .5em;
+	}
+	.heavy {
+		font-size: .75em;
+	}
+	#accent {
+		font-size: 1em;
+		letter-spacing: 1px;
+	}
+	.btn-green, .btn-orange, .btn-blue {
+		/* standardize button size */
+		height: 10%;
+		width: 25%;
+		min-width: 10px;
+		margin-left: 5%;
+		text-align: center;
+
+		font-size: 1.25em;
+		padding: 5px;
+	}
+	/* misc. width adjustments */
+	main {
+		width: 90%;
+		margin: none;
+	}
+	footer {
+		width: 60%;
+	}
+}
+
+/* 
+	PRINT STYLESHEET
+*/
+@media print {
+	#wrapper {
+		background-image: none;
+		padding: 0px;
+		margin: 0px;
+	}
+	.btn-orange, .btn-green, .btn-blue {
+		display: none;
+	}
+}
